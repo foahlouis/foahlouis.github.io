@@ -1,60 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministry of Finance - Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-    <head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <a href="index.html"
+          ><img
+            src="imgs/logo_en.png"
+            alt="Ministry of Finance Logo"
+            class="logo"
+        /></a>
+      </div>
 
-        <title>My Web Page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-    </head>
-
-    <body>
-        <header class="texto">
-            <h1>Welcome to My Web Page</h1>
-        </header>
-
-        <hr>
-
-        <div class="header">
-            <h1>My Website</h1>
-            <h4>A simple web page layout</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+          <ul>
+            <li class="has-about">
+              <div class="about">
+                <a href="#" class="about-link">About Ministry</a>
+                <!-- <div
+                  class="about-panel"
+                  role="region"
+                  aria-label="About Ministry panel"
+                >
+                  <div class="about-panel-inner">
+                    <h3>About the Ministry</h3>
+                    <p>
+                      Texto a toa so para testar
+                    </p>
+                  </div>
+                </div> -->
+              </div>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Budget</a></li>
+            <li><a href="">News</a></li>
+          </ul>
         </div>
+      </nav>
 
+      <div class="aboutMinistryContent"></div>
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="auth">
+        <button class="search-btn" aria-label="Search">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M11 4a7 7 0 1 0 4.95 11.95l4.29 4.29 1.41-1.41-4.29-4.29A7 7 0 0 0 11 4z"
+              stroke="#333"
+              stroke-width="1.2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <span class="vertical-divider" aria-hidden="true"></span>
+        <button class="language-btn" aria-label="Language">
+          <p>عربي</p>
+        </button>
 
-        <img src="logo_en.png" alt="Sample Image" style="width: 15%;height:auto;">
-
-        <main>
-            <section class="texto" id="home">
-                <h2>Home Section</h2>
-
-                <p title="teste">This is the home section of the web page.</p>
-            </section>
-
-            <section id="about">
-                <h2>About Section</h2>
-                <p>This section contains information about the web page.</p>
-            </section>
-
-            <section id="contact">
-                <h2>Contact Section</h2>
-                <p>This section provides contact information.</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2024 My Web Page</p>
-        </footer>
-    </body>
-
-
-
-</html>s
+        <div class="login" aria-haspopup="true">
+          <button class="login-btn" aria-expanded="false">Login</button>
+          <div class="login-menu" role="menu" aria-label="Login menu">
+            <a href="#" role="menuitem">Etimad</a>
+            <a href="#" role="menuitem">Individuals Portal (Arabic only)</a>
+            <a href="#" role="menuitem">Labers Fesses Portal (Arabic only)</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <main class="hero" role="img" aria-label="Hero image">
+        <img
+          src="imgs/coiso.png"
+        />
+      </main>
+      <div class="promo-logos">
+        <div class="promo-inner">
+          <img src="imgs/Logo-BUD-2023 (1).png" alt="Logo BUD 2023" />
+          <img src="imgs/NDMC_1.png" alt="NDMC logo" />
+          <img src="imgs/s03.png" alt="Partner logo 1" />
+          <img src="imgs/صور الموقع الجديد (2).png" alt="Partner logo 2" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
